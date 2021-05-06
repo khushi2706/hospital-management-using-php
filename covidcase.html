@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+<script src="myscript.js"></script> 
+</head>
+<body ng-app="MyApp" ng-controller="MyCtrl">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.php"><img src="img/logo1.png" width="50" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="appoiment.php">Appoiment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chart.php">availability</a>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" href="covidcase.html">Covid update</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blogs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.php#stories">stories</a></li>
+                  <li><a class="dropdown-item" href="index.php#DoctorTeam">Doctor team</a></li>
+                </ul>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="index.php#about">About Us</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+  <div class="container mt-5">     
+     <div class="jumbotron">
+    <h1 class="text-center">{{title}}</h1>
+    <p class="text-center">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<br>
+        Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover
+         without special treatment.</p>
+         <div class="row">
+             <div class="col-md-4">
+              <div class="card bg-warning text-white">
+                  <div class="card-body">
+                    <h3>CONFIRMED CASES</h3>
+                    <h3>{{all_data.confirmed.value}}</h3>
+                  </div>
+                </div>
+              </div>
+             <div class="col-md-4">
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                      <h3>RECOVERED CASES</h3>
+                      <h3>{{all_data.recovered.value}}</h3>
+                    </div>
+                  </div>
+             </div>
+             <div class="col-md-4">
+                <div class="card bg-danger text-white">
+                    <div class="card-body">
+                      <h3>DEATH CASES</h3>
+                      <h3>{{all_data.deaths.value}}</h3>
+                    </div>
+                  </div>
+             </div>
+         </div>
+         
+</div>   
+  </div>
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+  
+      <h3>HEALTH<span>care</span></h3>
+  
+      <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Contact</a>
+      </p>
+    </div>
+  
+    <div class="footer-center">
+  
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Health care hospital, Vallabh Vidyanagar - 388 120.</span> GUJARAT, INDIA.</p>
+      </div>
+  
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>02692-230-104</p>
+      </div>
+  
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:contact@healthcare.in<">contact@healthcare.in</a></p>
+      </div>
+  
+    </div>
+  
+    <div class="footer-right">
+  
+      <p class="footer-company-about">
+          <span>Our social sites</span>
+      </p>
+  
+      <div class="footer-icons">
+  
+          <a href="#""><i class=" fa fa-instagram"></i></a>
+          <a href="#""><i class=" fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+  
+      </div>
+  
+    </div>
+  </footer>
+</body>
+</html>

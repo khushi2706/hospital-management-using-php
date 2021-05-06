@@ -1,0 +1,682 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* .navbar{
+width:100vw;  
+height:6vw;
+} */
+
+
+.slider {
+  width: 100%;
+  height: auto;
+}
+
+.slider .slide {
+  width: 100vw;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.slider .slide .onImg_text {
+  width: 45%;
+  position: absolute;
+  top: 0rem;
+  left: 10rem;
+}
+
+.slider .slide .onImg_text h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 7rem;
+}
+
+.slider .slide .onImg_text p {
+  color: white;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+.slider .slide .onImg_text .btns {
+  margin-top: 3.5rem;
+}
+
+.slider .slide .onImg_text .btns a {
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 1.2rem;
+  border-radius: .5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.slider .slide .onImg_text .btns a:hover {
+  background-color:  #309c26;
+  border: 2px solid #309c26;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.slider .slider_box {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  position: relative;
+  top: -6.5rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.slider .slider_box .slider_innerBox {
+  width: 25%;
+ 
+  display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+  padding: 3rem 0;
+}
+
+.slider .slider_box .slider_innerBox i {
+  font-size: 2.5rem;
+  color: #309c26;
+  margin-bottom: .5rem;
+}
+
+.slider .slider_box .slider_innerBox h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #309c26;
+}
+
+.slider .slider_box .slider_innerBox p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4f738d;
+}
+
+.aboutHospital {
+  width: 100vw;
+  height: auto;
+  padding: 0 10vw;
+  display: flex;
+}
+
+.aboutHospital .aboutImg {
+  width: 30rem;
+  height: 30rem;
+  
+  display: flex;
+
+          justify-content: center;
+}
+
+.aboutHospital .aboutImg img {
+  width: 28rem;
+  height: 28rem;
+  overflow: hidden;
+  border-radius: .8rem;
+  position: absolute;
+  z-index: 100;
+}
+
+.aboutHospital .aboutImg .blank_box1 {
+  width: 20rem;
+  height: 20rem;
+  background-color: #309c26;
+  border-radius: .8rem;
+  position: relative;
+  top: 0;
+  z-index: 2;
+  left: 1rem;
+  animation: box1 2s infinite linear alternate;
+}
+
+.aboutHospital .aboutImg .blank_box2 {
+  margin-top: 8rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: #309c26;
+  border-radius: .8rem;
+  position: relative;
+  right: 1rem;
+  top: 0;
+  animation: box2 2s infinite linear alternate;
+}
+
+
+@keyframes box1 {
+  0% {
+    top: 0;
+    left: 1rem;
+  }
+  100% {
+    top: -1rem;
+    left: -.5rem;
+  }
+}
+
+
+@keyframes box2 {
+  0% {
+    right: 1rem;
+    top: 0;
+  }
+  100% {
+    right: -.5rem;
+    top: 1rem;
+  }
+}
+
+.aboutHospital .aboutText {
+  width: 50%;
+  padding: 3rem 1rem 3rem 5rem;
+}
+
+.aboutHospital .aboutText h1 {
+  margin-top: .5rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.aboutHospital .aboutText p {
+  font-weight: 500;
+  color: #707085;
+}
+
+.aboutHospital .aboutText ul {
+  padding: 0rem;
+  margin-bottom: 2rem;
+}
+
+.aboutHospital .aboutText ul li {
+  list-style: none;
+}
+
+.aboutHospital .aboutText a {
+  padding: 1rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #309c26;
+  border-radius: .4rem;
+}
+
+.title_box {
+  width: 100vw;
+  height: auto;
+  padding: 0 10vw;
+  margin-top: 3.5rem;
+}
+
+.title_box h1 {
+  font-weight: bold;
+}
+
+.title_box h1 span {
+  border-bottom: 5px solid #309c26;
+}
+
+.OurHospitalServices {
+  width: 100vw;
+  height: auto;
+  padding: 0 10vw;
+
+  display: flex;
+  
+      flex-wrap: wrap;
+ 
+          justify-content: space-evenly;
+}
+
+.OurHospitalServices .services_box {
+  width: 15rem;
+  height: 15rem;
+  
+  display: flex;
+
+          flex-direction: column;
+ 
+          justify-content: center;
+ 
+          align-items: center;
+  padding: 1rem;
+          box-shadow: 2px 2px 16px rgba(128, 128, 128, 0.288);
+  margin-top: 1.5rem;
+}
+
+.OurHospitalServices .services_box img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.OurHospitalServices .services_box h4 {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.OurHospitalServices .services_box p {
+  text-align: center;
+  color: #707085;
+  font-weight: 600;
+}
+
+.OurHospitalServices .services_box a {
+  padding: .7rem 1rem;
+  text-decoration: none;
+  background-color: white;
+  color: #309c26;
+  display: none;
+}
+
+.OurHospitalServices .services_box a:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.OurHospitalServices .services_box:hover a {
+  display: block;
+}
+
+.OurHospitalServices .services_box:hover img {
+  display: none;
+}
+
+.OurHospitalServices .services_box:hover p {
+  color: white;
+}
+
+.OurHospitalServices .services_box:hover h4 {
+  color: white;
+}
+
+.OurHospitalServices .services_box:hover {
+  background-color: #309c26;
+
+  transition: .5s;
+}
+
+.Our_Expertise {
+  width: 100vw;
+  height: auto;
+  padding: 0 10vw;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.Our_Expertise .expertise_card {
+  width: 35rem;
+  height: auto;
+  display: flex;
+      flex-wrap: wrap;
+          justify-content: space-evenly;
+}
+
+.Our_Expertise .expertise_card .card_box {
+  width: 15rem;
+  height: auto;
+  background-color: #309c26;
+  padding: 3rem 1rec m;
+  border-radius: .6rem;
+  margin-top: 1.5rem;
+  
+  display: flex;
+          flex-direction: column;
+  
+          justify-content: center;
+  
+          align-items: center;
+}
+
+.Our_Expertise .expertise_card .card_box i {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  font-size: 3rem;
+  border-radius: 50%;
+  display: flex;
+          justify-content: center;
+
+          align-items: center;
+}
+
+.Our_Expertise .expertise_card .card_box h4 {
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.Our_Expertise .expertise_card .card_box p {
+  color: white;
+  font-weight: 400;
+  text-align: center;
+}
+
+.Our_Expertise .expertise_img_box {
+  width: 35rem;
+  height: auto;
+  display: flex;
+          justify-content: center;
+
+          align-items: center;
+}
+
+.Our_Expertise .expertise_img_box .expertise_img {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+          justify-content: center;
+}
+
+.Our_Expertise .expertise_img_box .expertise_img img {
+  width: 28rem;
+  height: 28rem;
+  overflow: hidden;
+  border-radius: .8rem;
+  position: absolute;
+  z-index: 100;
+}
+
+.Our_Expertise .expertise_img_box .expertise_img .blank_box1 {
+  width: 20rem;
+  height: 20rem;
+  background-color: #309c26;
+  border-radius: .8rem;
+  position: relative;
+  top: 0;
+  z-index: 2;
+  left: 1rem;
+  animation: box1 2s infinite linear alternate;
+}
+
+.Our_Expertise .expertise_img_box .expertise_img .blank_box2 {
+  margin-top: 8rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: #309c26;
+  border-radius: .8rem;
+  position: relative;
+  right: 1rem;
+  top: 0;
+          animation: box2 2s infinite linear alternate;
+}
+/* animation */
+@keyframes box1 {
+  0% {
+    top: 0;
+    left: 1rem;
+  }
+  100% {
+    top: -1rem;
+    left: -.5rem;
+  }
+}
+
+@keyframes box2 {
+  0% {
+    right: 1rem;
+    top: 0;
+  }
+  100% {
+    right: -.5rem;
+    top: 1rem;
+  }
+}
+
+.MeetOurDoctors {
+  width: 100vw;
+  height: auto;
+  padding: 0 10vw;
+  margin-top: 1rem;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.MeetOurDoctors .doctor_card {
+  width: 20rem;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: .5rem;
+          box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.315);
+}
+
+.MeetOurDoctors .doctor_card .doctor_img img {
+  width: 20rem;
+  height: 23rem;
+  border-radius: .5rem;
+}
+
+.MeetOurDoctors .doctor_card .doctor_text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.MeetOurDoctors .doctor_card .doctor_text h4 {
+  color: black;
+  font-weight: 600;
+}
+
+.MeetOurDoctors .doctor_card .doctor_text p {
+  color: #4f738d;
+}
+
+.OurLatestBlogs {
+  width: 100vw;
+  height: auto;
+  padding: 0 10vw;
+  margin-top: 3rem;
+  display: flex;
+      flex-wrap: wrap;
+          justify-content: space-between;
+}
+
+.OurLatestBlogs .blog_card {
+  width: 20rem;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: .5rem;
+          box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.315);
+}
+
+.OurLatestBlogs .blog_card .blog_img img {
+  width: 20rem;
+  height: 15rem;
+  border-radius: .5rem;
+}
+
+.OurLatestBlogs .blog_card .blog_text {
+  padding: 1.5rem;
+}
+
+.OurLatestBlogs .blog_card .blog_text h4 {
+  color: black;
+  font-weight: 600;
+}
+
+.OurLatestBlogs .blog_card .blog_text p {
+  color: #4f738d;
+}
+
+.OurLatestBlogs .blog_card .blog_text .more_detail {
+
+  display: flex;
+
+          justify-content: space-between;
+  color: #309c26;
+}
+
+.OurLatestBlogs .blog_card .blog_text .more_detail .read_more {
+ 
+ 
+          justify-content: center;
+  
+          align-items: center;
+  font-weight: 600;
+}
+
+.OurLatestBlogs .blog_card .blog_text .more_detail .read_more a {
+  color:#309c26;
+  text-decoration: none;
+  margin-right: .5rem;
+}
+
+.OurLatestBlogs .blog_card .blog_text .more_detail .date {
+
+  display: flex;
+          justify-content: center;
+
+          align-items: center;
+  font-weight: 600;
+}
+
+.OurLatestBlogs .blog_card .blog_text .more_detail .date i {
+  margin-right: .5rem;
+}
+
+footer {
+  /* position: fixed; */
+  bottom: 0;
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+
+          box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #309c26;
+}
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 10px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-center {
+  width: 45%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #309c26;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #309c26;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 10px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+
+/*# sourceMappingURL=index.css.map */
